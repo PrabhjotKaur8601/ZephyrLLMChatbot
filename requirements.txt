@@ -1,6 +1,1 @@
-gradio
-huggingface_hub
-PyMuPDF
-sentence-transformers
-numpy
-faiss-cpu
+huggingface_hub==0.22.2
