@@ -1,41 +1,69 @@
-# ZephyrLLMChatbot
-A guideline to build no-cost LLM chatbot 
+# WorkplaceFirstAidAssistant
 
-This README provides a structured and detailed guide to help users through the process of creating and deploying a customized LLM chatbot using Hugging Face Spaces and Gradio, highlighting key steps and customization options, complete with useful links for easy navigation.
+A RAG-based LLM chatbot specializing in workplace first aid information
 
-
-# Build and Deploy Your Custom LLM App in 5 Minutes for Free
+This README provides a guide to set up and use a specialized chatbot that leverages Retrieval-Augmented Generation (RAG) to provide information about workplace first aid programs, drawing from OSHA guidelines.
 
 ## Introduction
-Have you ever wished to craft a chatbot tailored to your needs? Whether it's a culinary wizard to guide you through complex recipes or an artistic mentor to discuss the nuances of painting techniques, this comprehensive guide is your gateway. We'll walk you through the simple steps to build and deploy your own LLM-based chatbot using [Hugging Face Spaces](https://huggingface.co/spaces) and Gradio—all in just five minutes, and absolutely free of charge!
+
+This project implements a chatbot that specializes in workplace first aid information. It uses a Large Language Model (LLM) combined with a Retrieval-Augmented Generation (RAG) system to provide accurate and relevant information based on OSHA's "Fundamentals of a Workplace First-Aid Program" document.
+
+## Features
+
+- Utilizes the Zephyr 7B model for natural language processing
+- Implements RAG for enhanced accuracy and relevance of responses
+- Provides information on workplace first aid programs, procedures, and legal requirements
+- Offers a user-friendly interface powered by Gradio
 
 ## Prerequisites
-Before you  start creating your chatbot, make sure you have the following:
-- **A Hugging Face Account**: Essential for accessing the platform where you'll build and host your chatbot. [Sign up here](https://huggingface.co/join).
 
-## Setup and Deployment
-1. **Choosing Your Chatbot’s Identity**: Decide what your chatbot will specialize in. This could be anything from a chef, painter, or even a relaxing buddy to help you unwind. The role you choose will define the interactions and capabilities of your chatbot.
+Before you start using this chatbot, make sure you have the following:
 
-2. **Logging into Hugging Face**:  Here, you'll need an account to access the tools required for deploying your chatbot. If you don't have an account, signing up is straightforward and quick.
+- Python 3.7 or higher
+- pip (Python package manager)
 
-3. **Navigating to Hugging Face Spaces**: Spaces are where the magic happens. This section of Hugging Face allows users to create and manage their applications seamlessly. Navigate to [Spaces](https://huggingface.co/spaces) to get started.
+## Installation
 
-4. **Creating Your Space**: Initiate a new space by clicking on 'Create New Space'. It’s important that the name of your Space reflects the chatbot's role, as it helps in identifying the application’s purpose at a glance.
+1. Clone this repository:
+   git clone https://github.com/yourusername/WorkplaceFirstAidAssistant.git
+   cd WorkplaceFirstAidAssistant
 
-5. **Configuring Your Chatbot**:
-   - **Selecting the Framework and Model**: Choose 'Gradio' as the framework for its user-friendly interface capabilities, and select a suitable model, such as 'Zephyr 7B', known for its versatility across various tasks.
-   - **Customization**: Here’s where you personalize the chatbot. Depending on the selected role, you might want to tailor system messages and interaction style. This customization will enable your chatbot to interact appropriately according to its role.
+2. Install the required packages:
+   pip install -r requirements.txt
 
-6. **Deployment**: Once setup is complete, deploy your chatbot by simply clicking the create button. Deployment usually takes a couple of minutes. After this, your chatbot will be up and running and ready to interact.
+## Usage
 
-## Customization Example
-To make your chatbot truly unique, consider personalizing it extensively. For instance, if you choose a 'Relaxing Buddy' role:
-- Modify the system messages to include comforting phrases and stress-relief tips.
-- Program the chatbot to suggest relaxation exercises, guide through meditation sessions, or simply offer soothing conversations.
+To run the chatbot locally:
 
- Explore different roles and tweak the system instructions to discover the full potential of your chatbot. Don’t forget to share your creations and experiences, as your insights could inspire others in their chatbot development.
+1. Execute the following command in your terminal:
+   python app.py
 
- If you wish to contribute: Please fork this repo. 
+2. Open your web browser and navigate to the local URL provided in the terminal output (typically http://127.0.0.1:7860).
 
- For any question reach me out @ turna.fardousi@gmail.com
+3. Start interacting with the chatbot by asking questions about workplace first aid programs.
 
+## Customization
+
+You can customize the chatbot by modifying the following in `app.py`:
+
+- Change the `system_message` to alter the chatbot's persona or specialization
+- Modify the `examples` list to add or change the suggested questions
+- Adjust the RAG parameters in the `search_documents` method to fine-tune retrieval
+
+## Disclaimer
+
+This chatbot provides educational information on workplace first-aid. It is not a substitute for professional medical advice, training, or local regulations. Always seek professional medical guidance and adhere to relevant laws.
+
+## Contributing
+
+If you wish to contribute:
+
+1. Fork this repository
+2. Create a new branch (git checkout -b feature/AmazingFeature)
+3. Commit your changes (git commit -m 'Add some AmazingFeature')
+4. Push to the branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
+
+## Contact
+
+For any questions or feedback, please reach out to [your-email@example.com].
