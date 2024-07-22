@@ -1,69 +1,78 @@
-# WorkplaceFirstAidAssistant
+# Zephyr Flying Instructor Chatbot
 
-A RAG-based LLM chatbot specializing in workplace first aid information
-
-This README provides a guide to set up and use a specialized chatbot that leverages Retrieval-Augmented Generation (RAG) to provide information about workplace first aid programs, drawing from OSHA guidelines.
+A specialized LLM chatbot designed to help you learn about flying airplanes
 
 ## Introduction
 
-This project implements a chatbot that specializes in workplace first aid information. It uses a Large Language Model (LLM) combined with a Retrieval-Augmented Generation (RAG) system to provide accurate and relevant information based on OSHA's "Fundamentals of a Workplace First-Aid Program" document.
+This project implements a chatbot using the Zephyr 7B model, specifically tailored to assist users in learning about flying airplanes. Whether you're a complete novice or looking to expand your aviation knowledge, this chatbot serves as your virtual flying instructor.
 
 ## Features
 
 - Utilizes the Zephyr 7B model for natural language processing
-- Implements RAG for enhanced accuracy and relevance of responses
-- Provides information on workplace first aid programs, procedures, and legal requirements
-- Offers a user-friendly interface powered by Gradio
+- Specialized in providing information about flying airplanes
+- User-friendly interface powered by Gradio
 
 ## Prerequisites
 
-Before you start using this chatbot, make sure you have the following:
-
-- Python 3.7 or higher
+- Python 3.7+
 - pip (Python package manager)
+- A Hugging Face account (for deployment)
 
 ## Installation
 
-1. Clone this repository:
-   git clone https://github.com/yourusername/WorkplaceFirstAidAssistant.git
-   cd WorkplaceFirstAidAssistant
+1. Clone the repository:
+   git clone https://github.com/yourusername/ZephyrFlyingInstructor.git
+   cd ZephyrFlyingInstructor
 
-2. Install the required packages:
+2. Install required packages:
    pip install -r requirements.txt
 
 ## Usage
 
-To run the chatbot locally:
-
-1. Execute the following command in your terminal:
+1. Run the chatbot locally:
    python app.py
 
-2. Open your web browser and navigate to the local URL provided in the terminal output (typically http://127.0.0.1:7860).
+2. Open your web browser and navigate to the provided local URL.
 
-3. Start interacting with the chatbot by asking questions about workplace first aid programs.
+3. Start asking questions about flying airplanes!
+
+## How It Works
+
+The chatbot is initialized with the following system message:
+
+"I want to learn how to fly an airplane."
+
+This specialized prompt ensures that the Zephyr 7B model focuses its vast knowledge on the subject of flying airplanes. You can ask questions about:
+
+- Basic flight principles
+- Aircraft controls and instruments
+- Pre-flight procedures
+- Navigation techniques
+- Aviation regulations
+- And much more!
 
 ## Customization
 
-You can customize the chatbot by modifying the following in `app.py`:
+While the chatbot is pre-configured for flying instruction, you can modify the system message in `app.py` to explore other aviation-related topics:
 
-- Change the `system_message` to alter the chatbot's persona or specialization
-- Modify the `examples` list to add or change the suggested questions
-- Adjust the RAG parameters in the `search_documents` method to fine-tune retrieval
+system_message = "I want to learn about aircraft maintenance."
 
-## Disclaimer
+## Deployment
 
-This chatbot provides educational information on workplace first-aid. It is not a substitute for professional medical advice, training, or local regulations. Always seek professional medical guidance and adhere to relevant laws.
+To deploy on Hugging Face Spaces:
+
+1. Log into your Hugging Face account
+2. Create a new Space, selecting Gradio as the SDK
+3. Upload the `app.py` and `requirements.txt` files
 
 ## Contributing
 
-If you wish to contribute:
-
-1. Fork this repository
-2. Create a new branch (git checkout -b feature/AmazingFeature)
-3. Commit your changes (git commit -m 'Add some AmazingFeature')
-4. Push to the branch (git push origin feature/AmazingFeature)
-5. Open a Pull Request
+Contributions to enhance the chatbot's aviation knowledge or improve its functionality are welcome. Please fork the repo and submit a pull request with your changes.
 
 ## Contact
 
-For any questions or feedback, please reach out to [your-email@example.com].
+For questions or to share your experiences learning about flying with this chatbot, contact: turna.fardousi@gmail.com
+
+## Disclaimer
+
+This chatbot provides educational information about flying airplanes. It is not a substitute for professional flight instruction. Always consult certified flight instructors and follow proper aviation regulations for actual flight training.
