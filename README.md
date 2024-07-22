@@ -4,7 +4,7 @@ A specialized LLM chatbot designed to help you learn about flying airplanes
 
 ## Introduction
 
-This project implements a chatbot using the Zephyr 7B model, specifically tailored to assist users in learning about flying airplanes. Whether you're a complete novice or looking to expand your aviation knowledge, this chatbot serves as your virtual flying instructor.
+This project implements a chatbot using the Zephyr 7B model, specifically tailored to assist users in learning about flying airplanes. Whether you're a complete novice or looking to expand your aviation knowledge, this chatbot serves as your virtual flying instructor. It was made using [Hugging Face Spaces](https://huggingface.co/spaces).
 
 ## Features
 
@@ -71,7 +71,7 @@ Contributions to enhance the chatbot's aviation knowledge or improve its functio
 
 ## Contact
 
-For questions or to share your experiences learning about flying with this chatbot, contact: turna.fardousi@gmail.com
+For questions or to share your experiences learning about flying with this chatbot, contact: pr4368601@alphacollege.me
 
 ## Disclaimer
 
