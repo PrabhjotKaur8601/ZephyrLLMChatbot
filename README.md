@@ -21,7 +21,7 @@ This project implements a chatbot using the Zephyr 7B model, specifically tailor
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/ZephyrFlyingInstructor.git
+   git clone https://github.com/PrabhjotKaur8601/ZephyrFlyingInstructor.git
    cd ZephyrFlyingInstructor
 
 2. Install required packages:
